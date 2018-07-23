@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.startscreen {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+	background: black;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+nav ul {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+nav li {
+	margin: 1em;
+	display: inline-block;
+}
+
+.navButton, .navButton:link, .navButton:visited, .navButton:active, .navButton:hover {
+	text-decoration: none;
+	font-family: 'Open Sans';
+	color: white;
+	font-weight: 100;
+	font-size: 2vw;
+}
+
+.navButton > .expandingUnderLine {
+	border-bottom: 3px solid white;
+	/*width: 0px;*/
+	opacity: 0.1;
+	transform: scaleX(0);
+	-webkit-transition: 0.6s ease;
+	transition: 0.6s ease;
+}
+
+.navButton:hover > .expandingUnderLine {
+	/*width: 100%;*/
+	opacity: 1;
+	transform: scaleX(1);
+}
+
+header {
+	height: 30vh;
+}
+
+h1 {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 4vw;
+	font-weight: 400;
+}
+
+.hello::after {
+	position: absolute;
+	right: -5px;
+    bottom: 5px;
+    width: 4px;
+    height: 4vw;
+    content: '';
+    opacity: 1;
+    display: block;
+    background: #FFF;
+}
+
+.hello.animateCursor::after {
+	animation: cursor .6s infinite ease;
+}
+
+@keyframes cursor {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#arrow {
+	position: absolute;
+	top: 85%;
+	
+	transition: 0.1s linear;
+}
+
+i {
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 20px;
+}
+
+.down {
+	transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}*/
+
+
+#arrow{
+	border-radius: 50%;
+	border: 2px solid transparent;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0 auto 0 auto;
+	z-index: 40;
+	color: black;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+#arrow > div {
+	position: absolute;
+	left: 50%;
+	bottom: -1%;
+	height: 0px;
+	width: 300px;
+	border-left: 3px solid white;
+	transform: translateX(-2px);
+	transition: 0.15s linear;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#arrow > div > p {
+	text-decoration: none;
+	font-family: 'Open Sans';
+	color: white;
+	position: absolute;
+	top: 5px;
+	left: -100%;
+}
+
+
+#arrow:hover div{
+	height: 70px;
+}
+
+#arrow:hover div > p{
+	animation-name: showLeft;
+	animation-delay: 0.25s;
+	animation-duration: 0.4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes showLeft{
+	0%   {left: -100%;}
+	100%   {left: 15px;}
+}
+

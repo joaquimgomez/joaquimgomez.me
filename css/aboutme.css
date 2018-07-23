@@ -1,0 +1,50 @@
+.aboutme {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+	background: white;
+}
+
+.aboutme > h1 {
+	position: absolute;
+	top: 100vh;
+	margin-top: 1em;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	font-weight: 700;
+	font-size: 3vw;
+	text-align: center;
+}
+
+.aboutme > div {
+	position: relative;
+	top: -1em;
+	text-align: center;
+	padding-left: 10em;;
+	padding-right: 10em;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5vw;
+	font-weight: 100;
+}
+
+#cvDoc, #cvDoc:link, #cvDoc:visited, #cvDoc:active, #cvDoc:hover {
+	position: relative;
+	top: 4em;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5vw;
+	font-weight: 100;
+	color: white;
+	border-radius: 15px;
+	text-decoration: none;
+};

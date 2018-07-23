@@ -1,0 +1,32 @@
+.projects {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    background: black;
+}
+
+.projects > h1 {
+	position: absolute;
+	top: 400vh;
+	margin-top: 1em;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-weight: 700;
+	font-size: 3vw;
+	text-align: center;
+}
+
+#projectText {
+	text-align: center;
+	padding-left: 10em;;
+	padding-right: 10em;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 2vw;
+	font-weight: 100;
+}
