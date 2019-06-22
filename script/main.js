@@ -15,7 +15,7 @@ $(document).ready(function(){
 	});
 
 	var elemID = "hello";
-	var texts = ["I'm Joaquim Gómez", "I'm BSc Computer Science student"];
+	var texts = ["I'm Joaquim Gómez", "I'm a BSc Computer Science student"];
 	typewrite(elemID, texts);
 
 });
