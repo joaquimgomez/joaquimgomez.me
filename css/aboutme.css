@@ -21,16 +21,142 @@
 	text-align: center;
 }
 
+.aboutme > #content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+
+	align-items: center;
+  justify-content: center;
+}
+
+#aboutMeleftSection {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 2;
+	width: 80%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#aboutMerightSection {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	width: 20%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 .aboutme > div {
-	position: relative;
-	top: -1em;
+	/*position: relative;*/
+	/*top: -1em;*/
 	text-align: center;
-	padding-left: 10em;;
+	padding-left: 10em;
 	padding-right: 10em;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5vw;
 	font-weight: 100;
 }
+
+/*#aboutMeImage > #back {
+	display: none;
+}
+
+#aboutMeImage > #front:hover {
+	display: none;
+}
+
+#aboutMeImage > #back:hover {
+	display: contents;
+}*/
+
+#aboutMeImage >img {
+	border-radius: 50%;
+}
+
+
+
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:30px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 1.0);
+}
+
+
+
 
 #cvDoc, #cvDoc:link, #cvDoc:visited, #cvDoc:active, #cvDoc:hover {
 	position: relative;

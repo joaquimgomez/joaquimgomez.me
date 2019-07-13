@@ -18,7 +18,16 @@ $(document).ready(function(){
 	var texts = ["I'm Joaquim Gómez", "I'm a BSc Computer Science student"];
 	typewrite(elemID, texts);
 
+	// Animated skill bars
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+
+
 });
+
 
 
 
