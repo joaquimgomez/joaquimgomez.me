@@ -1,0 +1,30 @@
+{
+    "name": "Joa(quim) Gómez",
+    "landing": {
+        "title": "Hi, I'm Joa",
+        "subtitles": [
+            "Computer science graduate 💻",
+            "Data Engineering and Analytics student @TUM 🧮"
+        ]
+    },
+    "theme": {
+        "light": {
+            "palette": {
+                "type": "light",
+                "background": {
+                    "paper": "#fff",
+                    "default": "#fafafa"
+                }
+            }
+        },
+        "dark": {
+            "palette": {
+                "type": "dark",
+                "background": {
+                    "paper": "#303030",
+                    "default": "#212121"
+                }
+            }
+        }
+    }
+}
