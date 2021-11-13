@@ -4,7 +4,7 @@ import { Brightness3, Brightness7 } from '@material-ui/icons'
 import { darkTheme, lightTheme } from '../src/theme';
 import { name } from '../data.json';
 import Landing from '../src/Landing';
-//import Skills from '../src/Skills';
+import Skills from '../src/Skills';
 //import Education from '../src/Education';
 
 const useStyles = makeStyles(theme => ({
@@ -46,8 +46,8 @@ export default function Index({ setTheme }) {
       </AppBar>
       <Container className={classes.body}>
         <Landing />
-        {/*g<Skills />
-        <Education />*/}
+        <Skills />
+        {/*<Education />*/}
       </Container>
     </div>
   )

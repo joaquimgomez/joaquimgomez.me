@@ -29,11 +29,14 @@
         "Languages": [
             "Python", "C++", "C", "JavaScript", "HTML5", "CSS3", "R", "Java"
         ],
-        "Frontend": [
-            "React", "Next.js", "Material-UI"
+        "Arificial Intelligence & Data Science": [
+            "PyTorch", "PyTorch Lightning", "scikit-learn", "OpenCV"
         ],
-        "Backend, Databases & Cloud": [
-            "Node.js", "Express", "PostgreSQL", "Heroku"
+        "Frontend, Backend, DBs & Cloud": [
+            "React", "Next.js", "Material-UI", "Node.js", "Express", "PostgreSQL", "Heroku"
+        ],
+        "Tools": [
+            "Git", "GitHub", "Jupyter Notebook", "Visual Studio Code", "LaTeX"
         ]
     },
     "theme": {
