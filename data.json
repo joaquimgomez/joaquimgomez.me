@@ -1,10 +1,39 @@
 {
     "name": "Joa(quim) Gómez",
     "landing": {
-        "title": "Hi, I'm Joa",
+        "title": "Hi, I'm Joa(quim)",
         "subtitles": [
             "Computer science graduate 💻",
             "Data Engineering and Analytics student @TUM 🧮"
+        ],
+        "image": "/images/joaquim.jpeg",
+        "contactOptions": [
+            {
+                "icon": "gmail",
+                "alt": "E-mail",
+                "link": "mailto:9joaquimgomez@gmail.com"
+            },
+            {
+                "icon": "linkedin",
+                "alt": "LinkedIn",
+                "link": "https://www.linkedin.com/in/joaquingomezsanchez/"
+            },
+            {
+                "icon": "github",
+                "alt": "GitHub",
+                "link": "https://github.com/joaquimgomez"
+            }
+        ]
+    },
+    "skills" : {
+        "Languages": [
+            "Python", "C++", "C", "JavaScript", "HTML5", "CSS3", "R", "Java"
+        ],
+        "Frontend": [
+            "React", "Next.js", "Material-UI"
+        ],
+        "Backend, Databases & Cloud": [
+            "Node.js", "Express", "PostgreSQL", "Heroku"
         ]
     },
     "theme": {
