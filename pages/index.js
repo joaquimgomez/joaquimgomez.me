@@ -5,7 +5,7 @@ import { darkTheme, lightTheme } from '../src/theme';
 import { name } from '../data.json';
 import Landing from '../src/Landing';
 import Skills from '../src/Skills';
-//import Education from '../src/Education';
+import Education from '../src/Education';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -47,7 +47,7 @@ export default function Index({ setTheme }) {
       <Container className={classes.body}>
         <Landing />
         <Skills />
-        {/*<Education />*/}
+        <Education />
       </Container>
     </div>
   )

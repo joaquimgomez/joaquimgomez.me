@@ -6,18 +6,22 @@ export function iconify(input = '') {
         },
         {
             in: /\./g,
-            out: "-dot-"
+            out: "dot"
         },
         {
             in: /&/g,
             out: "-and-"
         },
         {
-            in: ' ',
+            in: /\s/g,
             out: ''
         },
         {
             in: '_',
+            out: ''
+        },
+        {
+            in: '-',
             out: ''
         }
     ]

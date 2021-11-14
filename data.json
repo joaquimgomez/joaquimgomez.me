@@ -29,14 +29,14 @@
         "Languages": [
             "Python", "C++", "C", "JavaScript", "HTML5", "CSS3", "R", "Java"
         ],
-        "Arificial Intelligence & Data Science": [
+        "Data Science": [
             "PyTorch", "PyTorch Lightning", "scikit-learn", "OpenCV"
         ],
-        "Frontend, Backend, DBs & Cloud": [
+        "Frontend, Backend & DBs": [
             "React", "Next.js", "Material-UI", "Node.js", "Express", "PostgreSQL", "Heroku"
         ],
         "Tools": [
-            "Git", "GitHub", "Jupyter Notebook", "Visual Studio Code", "LaTeX"
+            "Git", "GitHub", "Visual Studio Code", "LaTeX"
         ]
     },
     "theme": {
