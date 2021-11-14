@@ -6,6 +6,7 @@ import { name } from '../data.json';
 import Landing from '../src/Landing';
 import Skills from '../src/Skills';
 import Education from '../src/Education';
+import Footer from '../src/Footer';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -49,6 +50,7 @@ export default function Index({ setTheme }) {
         <Skills />
         <Education />
       </Container>
+      <Footer />
     </div>
   )
 }

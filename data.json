@@ -39,6 +39,9 @@
             "Git", "GitHub", "Visual Studio Code", "LaTeX"
         ]
     },
+    "footer": {
+        "text": "Developed by Joaquim Gomez with 🤍 and 💻"
+    },
     "theme": {
         "light": {
             "palette": {
