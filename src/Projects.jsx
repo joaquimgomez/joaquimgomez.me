@@ -4,6 +4,7 @@ import { RepoIcon } from '@primer/octicons-react';
 const useStyles = makeStyles(theme => ({
     cont: {
         minHeight: `calc(100vh - ${theme.spacing(4)}px)`,   // TODO: Mirar si esta en todos los components.
+        paddingBottom: theme.spacing(10)
     },
     card: {
         height: '100%'
