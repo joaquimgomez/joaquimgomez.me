@@ -1,13 +1,22 @@
 import * as React from 'react';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineOppositeContent, TimelineDot } from '@mui/lab'
 import { Typography } from '@mui/material';
+import { makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles(theme => ({
+  oppositeContent: {
+    margin: "auto 0"
+  }
+}));
 
 export default function EducationTimeline() {
+  const classes = useStyles();
+
   return (
     <Timeline>
       <TimelineItem>
         <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
+          className={classes.oppositeContent}
           align="right"
           variant="body1"
         >
@@ -18,7 +27,7 @@ export default function EducationTimeline() {
             <TimelineDot variant="outlined" color="primary" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
+        <TimelineContent sx={{ py: '30px', px: 2 }}>
           <Typography variant="h6" component="span">
             Technische Universität München (TUM)
           </Typography>
@@ -28,8 +37,7 @@ export default function EducationTimeline() {
 
       <TimelineItem>
         <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          margin="auto 0"
+          className={classes.oppositeContent}
           align="right"
           variant="body2"
         >
@@ -37,10 +45,10 @@ export default function EducationTimeline() {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-            <TimelineDot variant="outlined" color="secondary" />
+            <TimelineDot variant="outlined" color="info" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
+        <TimelineContent sx={{ py: '30px', px: 2 }}>
           <Typography variant="h6" component="span">
             Universitat Politècnica de Catalunya (UPC)
           </Typography>
@@ -50,7 +58,7 @@ export default function EducationTimeline() {
 
       <TimelineItem>
         <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
+          className={classes.oppositeContent}
           align="right"
           variant="body1"
         >
@@ -58,10 +66,10 @@ export default function EducationTimeline() {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-            <TimelineDot variant="outlined" color="primary" />
+            <TimelineDot variant="outlined" color="grey" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
+        <TimelineContent sx={{ py: '30px', px: 2 }}>
           <Typography variant="h6" component="span">
             Institut Severo Ochoa (Esplugues de Llobregat)
           </Typography>
