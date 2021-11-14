@@ -25,6 +25,10 @@
             }
         ]
     },
+    "about": {
+        "text": "I'm a computer science graduate from the Universitat Politècnica de Catalunya · BarcelonaTech, and I'm currently student of the Master in  Data Engineering and Analytics from the Technische Universität München. I'm passionate about data science, machine learning, and data engineering, and I'm always trying to learn new things about them.",
+        "image": "/images/me.jpeg"
+    },
     "skills" : {
         "Languages": [
             "Python", "C++", "C", "JavaScript", "HTML5", "CSS3", "R", "Java"

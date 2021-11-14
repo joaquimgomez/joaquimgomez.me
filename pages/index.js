@@ -4,11 +4,13 @@ import { Brightness3, WbSunny } from '@material-ui/icons'
 import { darkTheme, lightTheme } from '../src/theme';
 import { name, projects } from '../data.json';
 import axios from 'axios';
+import About from '../src/About';
 import Landing from '../src/Landing';
 import Skills from '../src/Skills';
 import Education from '../src/Education';
-import Footer from '../src/Footer';
+import Experience from '../src/Experience';
 import Projects from '../src/Projects';
+import Footer from '../src/Footer';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -37,10 +39,7 @@ export async function getStaticProps() {
   const gitHubRepositories = await Promise.allSettled(
     repositories.map(
       async name => {
-        //const repository = await fetch(`${baseURI}/${name}`, headers).then(res => res.json());
         const repository = await axios.get(`${baseURI}/${name}`, headers).then(res => res.data);
-        //console.log(repository)
-        //const langs = await fetch(`${baseURI}/${name}/languages`, headers).then(res => res.json())
         const langs = await axios.get(`${baseURI}/${name}/languages`, headers).then(res => res.data)
         return {
           ...repository,
@@ -84,8 +83,10 @@ export default function Index({ projects, setTheme }) {
       </AppBar>
       <Container className={classes.body}>
         <Landing />
+        <About />
         <Skills />
         <Education />
+        <Experience />
         <Projects projects={projects} />
       </Container>
       <Footer />

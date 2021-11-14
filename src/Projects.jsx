@@ -4,6 +4,7 @@ import { RepoIcon } from '@primer/octicons-react';
 const useStyles = makeStyles(theme => ({
     cont: {
         minHeight: `calc(100vh - ${theme.spacing(4)}px)`,   // TODO: Mirar si esta en todos los components.
+        paddingBottom: theme.spacing(10)
     },
     card: {
         height: '100%'
@@ -18,7 +19,7 @@ export default function Projects({ projects }) {
     const classes = useStyles();
 
     return (
-        <Grid container direction="row" justify="center" alignItems="center" spacing={10} className={classes.cont}>
+        <Grid container direction="row-reverse" justify="center" alignItems="center" spacing={10} className={classes.cont}>
             <Grid item xs={12} lg={6}>
                 <Typography variant="h2" align="center">
                     Projects
