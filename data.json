@@ -39,6 +39,20 @@
             "Git", "GitHub", "Visual Studio Code", "LaTeX"
         ]
     },
+    "projects": {
+        "baseURI": "https://api.github.com/repos/joaquimgomez",
+        "repositories": [
+            "joaquimgomez.me",
+            "BachelorsThesis-TextSimilarityMeasures",
+            "FIB-PAE-QUESTIONNAIRE4U",
+            "FIB-APA-Pulsars",
+            "FIB-VC",
+            "FIB-PROP-Schedules-Generator"
+        ]
+    },
+    "footer": {
+        "text": "Developed by Joaquim Gomez with 🤍 and 💻"
+    },
     "theme": {
         "light": {
             "palette": {

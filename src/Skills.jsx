@@ -33,7 +33,7 @@ Object.values(wrappedSkills).forEach(oarr => {
     })
 })
 
-const UseStyles = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
     cont: {
         minHeight: `calc(100vh - ${theme.spacing(4)}px)`,
         paddingBottom: theme.spacing(10)
@@ -51,7 +51,7 @@ const UseStyles = makeStyles(theme => ({
 
 export default function Skills() {
 
-    const classes = UseStyles();
+    const classes = useStyles();
 
     const theme = useTheme();
 
