@@ -19,7 +19,7 @@ export default function Projects({ projects }) {
     const classes = useStyles();
 
     return (
-        <Grid container direction="row" justify="center" alignItems="center" spacing={10} className={classes.cont}>
+        <Grid container direction="row-reverse" justify="center" alignItems="center" spacing={10} className={classes.cont}>
             <Grid item xs={12} lg={6}>
                 <Typography variant="h2" align="center">
                     Projects

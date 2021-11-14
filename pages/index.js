@@ -8,8 +8,9 @@ import About from '../src/About';
 import Landing from '../src/Landing';
 import Skills from '../src/Skills';
 import Education from '../src/Education';
-import Footer from '../src/Footer';
+import Experience from '../src/Experience';
 import Projects from '../src/Projects';
+import Footer from '../src/Footer';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -85,6 +86,7 @@ export default function Index({ projects, setTheme }) {
         <About />
         <Skills />
         <Education />
+        <Experience />
         <Projects projects={projects} />
       </Container>
       <Footer />
