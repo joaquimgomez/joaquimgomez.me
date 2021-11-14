@@ -1,12 +1,14 @@
 import React, { useCallback } from 'react';
 import { makeStyles, AppBar, Toolbar, Typography, IconButton, useScrollTrigger, Container, useTheme } from '@material-ui/core'
-import { Brightness3, Brightness7 } from '@material-ui/icons'
+import { Brightness3, WbSunny } from '@material-ui/icons'
 import { darkTheme, lightTheme } from '../src/theme';
-import { name } from '../data.json';
+import { name, projects } from '../data.json';
+import axios from 'axios';
 import Landing from '../src/Landing';
 import Skills from '../src/Skills';
 import Education from '../src/Education';
 import Footer from '../src/Footer';
+import Projects from '../src/Projects';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,7 +23,42 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Index({ setTheme }) {
+export async function getStaticProps() {
+  const baseURI = projects.baseURI
+  
+  const repositories = projects.repositories
+  
+  const headers = {
+    headers: { 
+      'Authorization': `token ${process.env.GITHUB}`
+    }
+  }
+  
+  const gitHubRepositories = await Promise.allSettled(
+    repositories.map(
+      async name => {
+        //const repository = await fetch(`${baseURI}/${name}`, headers).then(res => res.json());
+        const repository = await axios.get(`${baseURI}/${name}`, headers).then(res => res.data);
+        //console.log(repository)
+        //const langs = await fetch(`${baseURI}/${name}/languages`, headers).then(res => res.json())
+        const langs = await axios.get(`${baseURI}/${name}/languages`, headers).then(res => res.data)
+        return {
+          ...repository,
+          languages: Object.getOwnPropertyNames(langs)
+        };
+      }
+    )
+  );
+
+  return {
+    props: {
+      projects: gitHubRepositories
+    },
+    revalidate: 60
+  }
+}
+
+export default function Index({ projects, setTheme }) {
 
   const classes = useStyles();
 
@@ -41,7 +78,7 @@ export default function Index({ setTheme }) {
             { name }
           </Typography>
           <IconButton edge="end" color="inherit" onClick={toggleTheme}>
-            { theme.palette.type === 'dark' ? <Brightness3 /> : <Brightness7 /> }
+            { theme.palette.type === 'dark' ? <Brightness3 /> : <WbSunny /> }
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -49,6 +86,7 @@ export default function Index({ setTheme }) {
         <Landing />
         <Skills />
         <Education />
+        <Projects projects={projects} />
       </Container>
       <Footer />
     </div>
