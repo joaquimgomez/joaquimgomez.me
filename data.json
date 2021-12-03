@@ -34,7 +34,7 @@
             "Python", "C++", "C", "JavaScript", "HTML5", "CSS3", "R", "Java"
         ],
         "Data Science": [
-            "PyTorch", "PyTorch Lightning", "scikit-learn", "OpenCV"
+            "PyTorch", "PyTorch Lightning", "scikit-learn", "OpenCV", "Tableau"
         ],
         "Frontend, Backend & DBs": [
             "React", "Next.js", "Material-UI", "Node.js", "Express", "PostgreSQL", "Heroku"
