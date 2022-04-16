@@ -55,7 +55,8 @@
         ]
     },
     "footer": {
-        "text": "Developed by Joaquim Gomez with 🤍 and 💻"
+        "textLight": "Developed by Joaquim Gomez with 🖤 and 💻",
+        "textDark": "Developed by Joaquim Gomez with 🤍 and 💻"
     },
     "theme": {
         "light": {

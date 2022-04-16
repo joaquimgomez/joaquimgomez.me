@@ -27,7 +27,7 @@ export default function Footer() {
                 <Container maxWidth="md">
                     <Toolbar>
                         <Typography variant="body1" color="inherit" gutterBottom align="center" className={classes.text}>
-                            {footer.text}
+                            {theme.palette.type === 'dark' ? footer.textDark : footer.textLight}
                         </Typography>
                     </Toolbar>
                 </Container>
