@@ -18,8 +18,14 @@ export default class MyDocument extends Document {
               href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
             />
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+            <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/icons8-circulado-j-16.png"/>
+            <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/icons8-circulado-j-32.png"/>
+            <link rel="icon" type="image/png" sizes="57x57" href="/public/favicon/icons8-circulado-j-57.png"/>
+            <link rel="icon" type="image/png" sizes="60x60" href="/public/favicon/icons8-circulado-j-60.png"/>
+            <link rel="icon" type="image/png" sizes="70x70" href="/public/favicon/icons8-circulado-j-70.png"/>
+            <link rel="icon" type="image/png" sizes="72x72" href="/public/favicon/icons8-circulado-j-72.png"/>
+            <link rel="icon" type="image/png" sizes="76x76" href="/public/favicon/icons8-circulado-j-76.png"/>
+            <link rel="icon" type="image/png" sizes="96x96" href="/public/favicon/icons8-circulado-j-96.png"/>
             <link rel="manifest" href="/manifest.webmanifest"></link>
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S0X8Y5X3J"></script>
             <script
