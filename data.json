@@ -22,6 +22,11 @@
                 "icon": "github",
                 "alt": "GitHub",
                 "link": "https://github.com/joaquimgomez"
+            },
+            {
+                "icon": "DocuSign",
+                "alt": "Curriculum Vitae",
+                "link": "/docs/CVJoaquinGomezSanchez.pdf"
             }
         ]
     },
@@ -53,6 +58,11 @@
             "FIB-VC",
             "FIB-PROP-Schedules-Generator"
         ]
+    },
+    "publications": {
+        "publications": {
+            "2021": [{}]
+        }
     },
     "footer": {
         "textLight": "Developed by Joaquim Gomez with 🖤 and 💻",
